@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#eee" >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="55.0dip"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:onClick="onback"
+             android:background="@drawable/btn_bg_style"
+            android:src="@drawable/back_92xx"/>
+        
+        <TextView
+            android:layout_toRightOf="@id/btn_back" 
+            android:layout_width="0.3dp"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="3dp"
+            android:visibility="gone"
+            android:layout_marginBottom="3dp"
+            android:background="#cc0000"/>
+
+       <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="风险提示"         
+            android:textColor="#444"
+            android:textSize="17sp" />
+     
+    </RelativeLayout>
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:scrollbars="none">
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="尊敬的客户非常感谢您选择我们的服务！8518理财网所有产品的提示信息都来源于各正规机构的产品信息，本网站负责筛选，展现这些信息；本网站所有的的产品收益都是预期收益，相关收益提示信息符合国家的相关法律法规规定；本网站的订单和服务系统与网下合约服务系统是一个统一的整体服务平台，以网下各金融机构正式合约规定为主；本网站选中的产品是正规产品经过各金融机构审核，本网站也经过多轮筛选和调研，但依然不能确保其信息准备性；本网站是专业服务平台，不对最终产品的收益或风险负责，请您注意签约条款。\n\n
+
+8518理财网所有客户资金直接进入产品对应的金融机构账户，我们只是全程服务于您的投资！\n\n
+
+以下风险提示内容，请投资者认真详细阅读，在充分了解并清楚知晓8518理财网所发布产品蕴含风险的基础上，通过自身判断，自主参与交易，并自愿承担相关风险：\n\n
+
+信用风险：又称违约风险，是指交易对手未能履行约定契约中的义务而造成经济损失的风险，即受信人不能履行还本付息的责任而使授信人的预期收益与实际收益发生偏离的可能性，它是金融风险的主要类型。\n\n
+
+政策风险：货币政策、财政政策、产业政策和理财市场监管政策等国家政策的变化对市场产生一定的影响，可能导致投资品种的价值和风险发生较大变化，从而影响信托 计划收益。\n\n
+
+利率风险：固定收益信托预期收益已在发行时确立固定，除信托合同另有规定外，不会随利率改变而改变;当处于加息周期时，固定收益信托的相对超额收 益随着无风险收益率提高而降低。\n\n
+
+市场风险：因国家政策变化、经济周期、利率变化、通货膨胀、上市公司经营状况的变化以及投资品种的其他因素可能发生重大变化，导致投资品种的市场价格发生波动，从而造成信托财产损失。\n\n
+
+管理风险：由于受托人的经验、技能等因素的限制，在管理财产的过程中因信息不对称、管理不善、判断失误等而使财产未能实现预期收益或遭受损失的风险。\n\n
+
+技术风险：当计算机、通讯系统、交易网络等技术保障系统或信息网络支持出现异常情况，可能导致投资标的日常交易无法按正常时限完成、登记结算系统瘫痪、核算系统无法按正常时限产生净值、投资交易指令无法及时传输等风险。\n\n
+
+保管人风险：理财产品的保管人可能存在因其违规经营和管理疏忽而使信托财产遭受损失的风险。\n\n
+
+流动性风险：大多数资管产品在开放期前不得赎回，即使能提前支取也要付出一定代价，如手续费等。\n\n
+
+其它风险：由于自然灾害、战争等不可抗力因素的出现，将严重影响金融市场的正常运行，从而导致理财资产收益降低或损失，甚至影响理财计划的受理、投资、偿还等的正常进行，进而影响资产收益安全。\n\n
+
+以上《风险提示书》本人已阅读并完全理解，愿意承担理财过程中的各种风险。"/>
+    </ScrollView>
+
+</LinearLayout>

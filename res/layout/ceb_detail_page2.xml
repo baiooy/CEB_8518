@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_yaoqing"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="8dp" >
+
+        <Button
+            android:id="@+id/btn_chanpingxiangqing"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/left_check"
+            android:gravity="center"
+            android:text="产品详情"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+       <Button
+            android:id="@+id/btn_fengxiankongzhi"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/middle_uncheck"
+            android:gravity="center"
+            android:text="风险控制"
+            android:textColor="#f00"
+            android:textSize="12sp" />
+        <Button
+            android:id="@+id/btn_huankuanjihua"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/middle_uncheck"
+            android:gravity="center"
+            android:text="还款计划"
+            android:textColor="#f00"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_touzijilu"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/right_uncheck"
+            android:gravity="center"
+            android:text="投资记录"
+            android:textColor="#f00"
+            android:textSize="12sp" />
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="#bbb"></LinearLayout>
+ <android.support.v4.view.ViewPager
+        android:id="@+id/vp_cebdetail"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+    
+  
+</LinearLayout>

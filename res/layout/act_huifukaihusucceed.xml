@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+     <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#eee" >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="55.0dip"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:onClick="onback"
+            android:visibility="gone"
+             android:background="@drawable/btn_bg_style"
+            android:src="@drawable/back_92xx"/>
+      
+
+       <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="汇付开户成功"         
+            android:textColor="#444"
+            android:textSize="17sp" />
+     
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@id/top"
+        android:background="#ccc"></LinearLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="14dp"
+        android:layout_above="@+id/ll1">
+         <ImageView
+        android:id="@+id/iv_succeed" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/regissucceed"/>
+    </LinearLayout>
+   
+    <LinearLayout
+        android:id="@+id/ll1" 
+        android:layout_centerInParent="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#666"
+                android:textSize="12sp"
+                android:text="恭喜您，"/>
+             <TextView
+                 android:id="@+id/tv_loginname" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#666"
+                android:textSize="12sp"
+                android:text="Bob"/>
+             <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#666"
+                android:textSize="12sp"
+                android:text="，您已成功开通汇付天下账户。"/>
+        </LinearLayout>
+         <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+             <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="13sp"
+                android:text="现在只立即返回超额宝，开始赚钱！"/>
+         </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/ll1"
+        >
+        <Button
+         android:id="@+id/btn_backceb" 
+          android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="立即返回超额宝"
+         android:background="@drawable/main_btn_style"
+         android:textColor="@drawable/pinglun_text"/>
+    </LinearLayout>
+</RelativeLayout>

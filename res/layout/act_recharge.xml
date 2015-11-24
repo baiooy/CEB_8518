@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff" >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="55.0dip"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:onClick="onback"
+             android:background="@drawable/btn_bg_style"
+            android:src="@drawable/back_92xx"/>
+      
+       <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="充值"         
+            android:textColor="#444"
+            android:textSize="17sp" />
+      <TextView
+            android:id="@+id/tv_chongzhirule"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="right|center_vertical"
+            android:text="充值限额"
+            android:layout_alignParentRight="true"
+            android:paddingRight="8dp"
+            android:textColor="#f00"
+            android:textSize="14sp" />
+    </RelativeLayout>
+     <LinearLayout
+         android:id="@+id/ll1" 
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@id/top"
+        android:orientation="horizontal"
+        android:background="#ccc"></LinearLayout>
+    <RelativeLayout
+        		android:id="@+id/rl_zhanghuyue"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/ll1"
+                android:background="@drawable/list_bg_style"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    android:text="账户余额"
+                    android:textColor="#444"
+                    android:textSize="15sp" />
+
+               <TextView
+                   android:id="@+id/tv_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="10000.00元"
+                    android:layout_toRightOf="@id/tv_1"
+                    android:layout_marginLeft="24dp"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_chongzhijine"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/rl_zhanghuyue"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/list_bg_style"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+
+                <TextView
+                    android:id="@+id/tv_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    android:text="充值金额"
+                    android:textColor="#444"
+                    android:textSize="15sp" />
+
+                 <EditText 
+                     android:id="@+id/et_money"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:hint="最低充值50元，最高500万元"
+                    android:layout_toRightOf="@id/tv_2"
+                    android:layout_marginLeft="24dp"
+                    android:maxLength="9"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+            
+            <TextView 
+                    android:id="@+id/tv_chongzhi" 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="20dp"
+                    android:text="确认充值"
+                    android:textSize="15sp"
+                    android:layout_below="@id/rl_chongzhijine"
+                    android:clickable="true"
+                    android:background="@drawable/inputdata"
+                    android:textColor="#fff"/>
+            
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="12dp"
+                android:visibility="gone"
+                android:paddingRight="12dp"
+                android:layout_below="@id/rl_chongzhijine">
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:textSize="15sp"
+                    android:textColor="#000"
+                    android:text="支持快捷充值的银行卡有："/>
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:textSize="15sp"
+                    android:textColor="#777"
+                    android:text="工商银行、农业银行、上海银行、建设银行、中国银行、光大银行、兴业银行、中信银行、平安银行、浦发银行、渤海银行、邮政储蓄银行。"/>
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:textSize="15sp"
+                    android:textColor="#777"
+                    android:text="其他银行卡可通过bao.8518.com网站进行充值。我们正在努力添加中，敬请期待！"/>
+            </LinearLayout>
+             <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="9dp"
+        android:visibility="gone"
+        android:layout_below="@id/rl_chongzhijine" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="right|center_vertical"
+            android:text="查看充值限额"
+            android:paddingRight="8dp"
+            android:textColor="#f00"
+            android:textSize="16sp" />
+    </LinearLayout>
+ <LinearLayout android:id="@+id/ll_chongzhi"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:layout_alignParentBottom="true">
+                
+                <TextView 
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="确认充值"
+                    android:textSize="15sp"
+                    android:clickable="true"
+                    android:background="@drawable/btn_text"
+                    android:textColor="#fff"/>
+            </LinearLayout>
+</RelativeLayout>

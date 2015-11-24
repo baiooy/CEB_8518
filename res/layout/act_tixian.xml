@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#eee" >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="55.0dip"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_bg_style"
+            android:onClick="onback"
+            android:src="@drawable/back_92xx" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="提现"
+            android:textColor="#444"
+            android:textSize="17sp" />
+        <TextView
+            android:id="@+id/tv_tixianrule"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="right|center_vertical"
+            android:text="提现规则"
+            android:layout_alignParentRight="true"
+            android:paddingRight="8dp"
+            android:textColor="#f00"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <!-- <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_below="@id/top"
+        android:background="#fff"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/icbc" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left|bottom"
+                android:text="中国工商银行"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingTop="8dp"
+                android:text="622344**********2636228" />
+        </LinearLayout>
+    </LinearLayout> -->
+    <LinearLayout
+        android:id="@+id/ll_1" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:orientation="vertical">
+    <com.view.UGallery 
+                android:id="@+id/listView_bankcard"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:divider="#ccc"
+                android:background="#fff"
+                android:gravity="fill_horizontal"
+                android:animationDuration="0"
+                android:unselectedAlpha="0.5" />
+     <LinearLayout
+        android:id="@+id/loading_tixian"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:visibility="gone" 
+        >
+            <include 
+                android:layout_width="fill_parent"
+                android:layout_height="65dp"
+                layout="@layout/loading"/>
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_2"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/ll_1"
+        android:layout_marginTop="1dp"
+        android:background="#fff"
+        android:clickable="true"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="8dp"
+            android:text="可用金额"
+            android:textColor="#444"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:textColor="#000"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_3"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/ll_2"
+        android:layout_marginTop="1dp"
+        android:background="#fff"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="8dp"
+            android:text="提现金额"
+            android:textColor="#444"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_tixian"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="30dp"
+            android:background="@null"
+            android:hint="请输入提现金额"
+            android:inputType="numberDecimal"
+            android:maxLength="9"
+            android:textColor="#444"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <RadioGroup 
+        android:id="@+id/radiogroup"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:layout_below="@id/ll_3"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingRight="10dp">
+
+      
+
+            <com.ceb.widge.MyRadioButton
+                android:id="@+id/rb_putong"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:checked="true"
+                android:text="一般提现 (次日到账，手续费为2元/笔/日)" />
+
+        
+
+             <com.ceb.widge.MyRadioButton
+                android:id="@+id/rb_kuaisu"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:text="快速提现 (当天14:30前发起当天到账，手续费为提现金额*0.5‰ +2元/笔/日)" />
+
+           
+
+            <com.ceb.widge.MyRadioButton
+                android:id="@+id/rb_jishi"
+                android:layout_width="wrap_content"
+               	android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:text="即时提现 (仅支持工商、招商银行，手续费为提现金额*0.5‰ +2元/笔/日)" />  
+
+    </RadioGroup >
+
+     <TextView
+            android:id="@+id/tv_tixian"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="确认提现"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textColor="#fff"
+            android:clickable="true"
+            android:layout_below="@id/radiogroup"
+            android:background="@drawable/inputdata"
+            android:textSize="15sp" />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        android:layout_above="@+id/ll_tixian" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="right|center_vertical"
+            android:text="查看提现规则"
+            android:paddingRight="8dp"
+            android:textColor="#f00"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_tixian"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="确认提现"
+            android:textColor="#fff"
+            android:clickable="true"
+            android:background="@drawable/btn_text"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</RelativeLayout>

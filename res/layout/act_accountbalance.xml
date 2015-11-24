@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="55.0dip"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:onClick="onback"
+             android:background="@drawable/btn_bg_style"
+            android:src="@drawable/back_92xx"/>
+
+       <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="账户余额"         
+            android:textColor="#444"
+            android:textSize="17sp" />
+     
+    </RelativeLayout>
+    
+    <LinearLayout
+        	android:id="@+id/ll_tixian" 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:layout_below="@id/top"
+            android:orientation="vertical">
+            
+            <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="可提现金额（￥）"
+                android:textColor="#666"
+                android:padding="10dp"/>
+             <TextView
+                 android:id="@+id/tv_withdrawalMoney" 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#ff9933"
+                android:textSize="29sp"
+                android:padding="10dp"/>
+             <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:drawableRight="@drawable/youxia"/>
+            
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_1" 
+            android:layout_width="fill_parent"
+            android:layout_below="@id/ll_tixian"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#999"></LinearLayout>
+         
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="15dp"
+        android:background="#eee"></LinearLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:visibility="gone"
+        android:background="#999"></LinearLayout>
+    
+    </LinearLayout>
+    <RelativeLayout
+                android:id="@+id/rl_dongjie"
+                android:layout_width="fill_parent"
+                android:layout_below="@id/ll_1"
+                android:layout_height="50dp"
+                android:background="@drawable/list_bg_style"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    android:text="冻结金额（￥）"
+                    android:textColor="#444"
+                    android:textSize="15sp" />
+
+               <TextView
+                   android:id="@+id/tv_frozenSum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:textColor="#444"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_zongzichan"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/rl_dongjie"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/list_bg_style"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    android:text="资产总额（￥）"
+                    android:textColor="#444"
+                    android:textSize="15sp" />
+
+                 <TextView
+                     android:id="@+id/tv_totalAssets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:textColor="#444"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="#eb413d"
+                android:layout_alignParentBottom="true">
+                <TextView
+                    android:id="@+id/tv_recharge" 
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="fill_parent"
+                    android:text="充值"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:background="@drawable/btn_text"
+                    android:textColor="#fff"/>
+                <TextView 
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="#cc0000"/>
+                <TextView
+                    android:id="@+id/tv_tixian" 
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="提现"
+                    android:textSize="15sp"
+                    android:background="@drawable/btn_text"
+                    android:textColor="#fff"/>
+            </LinearLayout>
+            
+</RelativeLayout>

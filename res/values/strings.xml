@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">8518超额宝</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+
+    <!-- Gesture code starting -->
+    <string name="setup_gesture_code">设置手势密码</string>
+    <string name="setup_gesture_pattern">绘制解锁图案</string>
+    <string name="setup_gesture_pattern_again">再次绘制解锁图案</string>
+    <string name="forget_gesture_code">忘记手势密码?</string>
+    <string name="use_other_account_login">用其他账号登录</string>
+    <string name="set_gesture_pattern">绘制解锁图案</string>
+    <string name="set_gesture_pattern_reason">设置手势密码，防止他人未经授权查看</string>
+    <string name="reset_gesture_code">重新设置手势密码</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+    <!--
+    <string-array name="groups">
+        <item>天龙八部</item>
+        <item>射雕英雄传</item>
+        <item>神雕侠侣</item>
+    </string-array>
+    -->
+    <string-array name="groups">
+        <item>注册登录</item>
+        <item>新手入门</item>
+        <item>银行卡相关</item>
+        <item>相关优惠</item>
+        <item>安全保障</item>
+    </string-array>
+
+    <!--
+    <string-array name="tianlongbabu">
+        <item>萧峰</item>
+        <item>段誉</item>
+        <item>虚竹</item>
+    </string-array>
+    -->
+
+    <string-array name="zhucedenglu">
+        <item>设置密码说明</item>
+        <item>忘记密码怎么办？</item>
+        <item>注册时未及时收到验证码怎么办？</item>
+    </string-array>
+
+    <!--
+    <string-array name="tianlongbabu_detail">
+        <item>降龙十八掌,打狗棒法,龙爪手</item>
+        <item>凌波微步,六脉神剑</item>
+        <item>北冥神功,小无相功,天山折梅手,天山六阳掌</item>
+    </string-array>
+    -->
+
+    <string-array name="zhucedenglu_detail">
+        <item>8518超额宝理财平台拥有三重密码保护体系，8518登录密码、第三方支付托管登录密码及交易密码。\n8518登录密码是您在登录APP时使用的密码。\n第三方托管账户密码是您在充值时登录第三方托管账户的密码。\n交易密码是您在投资或提现时使用的密码。\n\n温馨提示：在设置密码时，建议不要设置同一密码，增加账户安全等级。</item>
+        <item>解决方案如下：\n\n
+1、第一种情况，未登录状态，登录页面输入手机号码点击忘记密码按提示步骤操作即可重设登录密码。\n\n
+2、第二种情况，已登录状态，点击“我的资产”个人头像进入-“账户中心”-“修改登录密码”中可重新设置登录密码。</item>
+        <item>因近期短信通道规则持续调整，导致手机收到验证码时间稍长，请大家在点击验证码时耐心等待几分钟，并检查手机WiFi或3G/4G网络是否正常。</item>
+    </string-array>
+
+    <!--
+    <string-array name="shediaoyingxiongzhuan">
+        <item>郭靖</item>
+        <item>黄蓉</item>
+        <item>王重阳</item>
+        <item>黄药师</item>
+        <item>欧阳锋</item>
+        <item>一灯</item>
+        <item>洪七公</item>
+    </string-array>
+    -->
+
+    <string-array name="xinshourumen">
+        <item>超额宝是什么？</item>
+        <item>超额宝对应的金融资产是什么？</item>
+        <item>超额宝如何保障投资安全？</item>
+        <item>超额宝是否符合监管要求？</item>
+        <item>超额宝如何保障信息安全？</item>
+        <item>超额宝如何进行转让，是否容易转让？</item>
+        <item>超额宝是否收取充值和提现的手续费？</item>
+        <item>超额宝产品认购时出现风险提示书， 是否表明超额宝风险较大？</item>
+        <item>为什么超额宝合同中没有本息保证？</item>
+        <item>超额宝可否线下购买？有没有纸质合同？</item>
+        <item>超额宝是P2P类产品吗？</item>
+    </string-array>
+
+    <!--
+    <string-array name="shediaoyingxiongzhuan_detail">
+        <item>降龙十八掌,九阴真经,天罡北斗阵,双手互搏,空明拳</item>
+        <item>碧波掌法,落英神剑掌,玉箫剑法,兰花拂穴手</item>
+        <item>先天功,金雁功,全真剑法,一剑化三清</item>
+        <item>桃花影落飞神剑，碧海潮生按玉箫</item>
+        <item>蛤蟆功,瞬息千里,神驼雪山掌,透骨打穴法</item>
+        <item>一阳指,先天功</item>
+        <item>降龙十八掌,打狗棒法,伏虎拳</item>
+    </string-array>
+    -->
+
+    <string-array name="xinshourumen_detail">
+        <item>超额宝是8518理财网自主设计的创新性理财产品，用户购买超额宝，相当于投资优质金融资产，是由金融机构监管的零违约记录的产品，拥有极高的安全性。超额宝打破了传统金融产品较高的投资起点，避免了现场购买理财产品的种种弊端，使小额理财客户也可以享受6%-12%的高收益。超额宝投资起点低、期限短，收益权可自由转让，操作便捷， 收益远高于同期银行理财及货币基金，是小额理财客户的首选。</item>
+        <item>超额宝对应资产严格限于现有合规金融机构（银行、信托、资管、券商）的优质金融资产，相应资产的入围条件是：\n\n• 对应金融机构保持零违约记录；\n\n• 对应资产的融资主体保持零违约记录；\n\n• 对应金融机构承诺或给出对应违约保证。\n\n例如，信托产品由中国银监会监管的信托公司发行，迄今为止，全国68家信托公司超过14万亿规模的信托资产未发生过违约，产品风险较低。</item>
+        <item>• 资产安全：国家正规金融机构管理的资产拥有完整的风控体系，而且带有金融机构的信用保证，产品违约率极低。超额宝在选择对应资产时做完整的风险和信用调查，确保资产的安全性。\n\n• 资产质押：超额宝对应的资产持有人将资产的所有权和收益权质押给8518理财网特定的监管账户。同时，管理和运营团队针对不同资产的份额给出不同的折扣率。\n\n• 资金托管：超额宝通过第三方支付平台汇付天下进行资金托管，每个注册用户都有自己对应的独立资金托管账户。充值、提现、打款还款均存入第三方账户，平台和帐户资金真正实现物理隔离，最大限度保障用户的资金安全。\n\n• 团队经验：超额宝管理团队在金融行业拥有十几年的经验积累，累计完成近千亿的投融资业务，目前服务的近百亿资产保持零违约记录</item>
+        <item>超额宝是由厚行金融设计的在线理财产品，厚行金融注册于陆家嘴金融贸易区，获得了金融信息服务许可，并联合金融机构共同运营。超额宝产品严格按金融行业监管要求，产品与金融资产一一对应，不做资金池，不做超募，信息披露真实详细，资金流向清晰透明。</item>
+        <item>超额宝由自主技术团队设计维护，实名认证、帐号绑定等多重安全认证，任何提现操作，只能转出到本人实名绑定的银行账户，完全保障用户的资金转出安全。同时采用独立的分级帐户管理权限，严格防范客户信息泄露。</item>
+        <item>客户持有的超额宝产品过了平台的封闭期后，可以根据交易双方自主意愿进行转让，转让是否成功与产品剩余期限、产品收益率等具体情况有关，8518理财网会尽力满足客户的转让要求，创造便利高效的转让环境。</item>
+        <item>目前 8518 理财网承担充值的手续费； 提现手续费由客户选择的到账时间决定， 由客户自行承担。</item>
+        <item>超额宝所有相关风险提示、在线合同都需符合行业监管要求，做到必要的告知义务，每一款产品的风险都由运营团队严格把握。</item>
+        <item>根据金融行业监管， 理财产品合同中不允许出现保本保息的内容， 但超额宝对应的是零违约记录的正规金融机构的资产，例如信托产品由中国银监会监管的信托公司发行，迄今为止，全国 68 家信托公司超过 14 万亿规模的信托资产未发生过违约，产品风险较低。</item>
+        <item>超额宝是纯线上的投资方式，而且由第三方进行资金托管，无法线下直接认购，是互联网理财的正规方式，没有纸质合同，只提供电子合同。按照国家规定，电子合同与纸质合同具有同等法律效力。</item>
+        <item>超额宝不是P2P类产品。超额宝只对正规金融资产的持有人进行收益权投资，是纯线上的理财工具，P2P类产品对应的是信用较低的个人或企业贷款，并且有线下运营以及混合资金池的管理，线下高昂的资金成本和运营费用以及管理的不透明，导致P2P类产品有较高的违约风险。</item>
+    </string-array>
+
+    <!--
+    <string-array name="shendiaoxialv">
+        <item>杨过</item>
+        <item>小龙女</item>
+    </string-array>
+    -->
+
+    <string-array name="yinhangka">
+        <item>8518超额宝目前支持的银行卡有哪些？</item>
+        <item>如何解绑网银支付银行卡？</item>
+        <item>如何解绑快捷支付银行卡？</item>
+    </string-array>
+
+    <!--
+    <string-array name="shendiaoxialv_detail">
+        <item>姓杨名过字改之,黯然销魂掌,玉女素心剑法,全真剑法,蛤蟆功</item>
+        <item>玉女素心剑法,古墓派轻功,金铃锁、淑女剑、玉蜂针、白金丝掌套</item>
+    </string-array>
+    -->
+<!-- 支持银行 \t\t\t\t \t\t \t\t单笔限额/万\t\t\t\t \t\t \t\t日限额/万\n
+
+交通银行\t\t \t\t \t\t \t\t \t\t \t\t5\t\t \t\t \t\t \t\t \t\t  \t\t \t\t\t\t5\n
+
+中国银行\t\t \t\t \t\t \t\t \t\t \t\t1\t\t \t\t \t\t \t\t \t\t  \t\t \t\t\t\t10\n
+
+广发银行\t\t \t\t \t\t \t\t \t\t \t\t5\t\t \t\t \t\t \t\t \t\t  \t\t \t\t\t\t100\n
+
+工商银行\t\t \t\t \t\t \t\t \t\t \t\t5\t\t \t\t \t\t \t\t \t\t  \t\t \t\t\t\t50\n
+
+农业银行\t\t \t\t \t\t \t\t \t\t \t\t5\t\t \t\t \t\t \t\t \t\t  \t\t \t\t\t\t5\n
+
+建设银行\t\t \t\t \t\t \t\t \t\t \t\t50\t\t \t\t \t\t \t\t \t\t  \t\t \t\t\t100\n
+
+浦发银行\t\t \t\t \t\t \t\t \t\t \t\t5\t\t \t\t \t\t \t\t \t\t  \t\t \t\t\t\t5\n
+
+招商银行\t\t \t\t \t\t \t\t \t\t \t\t50\t\t \t\t \t\t \t\t \t\t  \t\t \t\t\t100\n
+
+民生银行\t\t \t\t \t\t \t\t \t\t \t\t5\t\t \t\t \t\t \t\t \t\t  \t\t \t\t\t\t100\n
+
+兴业银行\t\t \t\t \t\t \t\t \t\t \t\t50\t\t \t\t \t\t \t\t \t\t  \t\t \t\t\t100\n
+
+深圳发展银行\t\t \t\t \t\t \t 100\t\t \t\t \t\t \t\t \t\t  \t\t \t\t\t100\n
+
+华夏银行\t\t \t\t \t\t \t\t \t\t \t\t100\t\t \t\t \t\t \t\t \t\t  \t \t\t\t100\n
+
+北京银行\t\t \t\t \t\t \t\t \t\t \t\t100\t\t \t\t \t\t \t\t \t\t  \t \t\t\t100\n
+
+中信银行\t\t \t\t \t\t \t\t \t\t \t\t100\t\t \t\t \t\t \t\t \t\t  \t \t\t\t100\n
+
+上海农商银行\t\t \t\t \t\t \t\t  1\t\t \t\t \t\t \t\t \t\t  \t\t\t \t\t\t50\n
+
+光大银行\t\t \t\t \t\t \t\t \t\t \t\t50\t\t \t\t \t\t \t\t \t\t  \t\t \t\t\t100 -->
+    <string-array name="yinhangka_detail">
+        <item></item>
+        <item>1、我的资产->账户中心->我的银行卡中先添加一张银行卡。\n\n2、将原来的银行卡“删除”即可。</item>
+        <item>1、在bao.8518.com帮助中心找到提现菜单，下载“线下解绑取现银行卡申请表”（以下简称“申请表”）。\n\n
+2、填写申请表。\n\n
+     投资人将申请表打印后，填写“用户托管账户信息”、“解绑原因说明”、“快捷银行卡信息”等信息。\n\n
+     备注：\n\n申请表必须打印后手写有效，否则无效。\n用户托管账户信息下的“所属P2P平台”列填写“8518理财网”。\n投资人须确保身份证上的所有信息清晰可见，照片内容要求真实有效，不得做任何修改。\n投资人解绑银行卡背面签名栏需本人签字，否则无效。\n投资人身份证信息与快捷银行卡信息确保为同一人，方能被上海汇付数据服务有限公司审核通过，并进入解绑流程。\n投资人需承担因提交错误信息引发的相应责任，故请认真填写表格。\n请投资人将填写好的申请表，连同身份证正反面及银行卡正反面，拍照或扫描回复邮件至bao@8518.com。\n我们会第一时间为您处理，感谢您的配合。\n如有任何疑问，请致电客服热线（400—860--8518）咨询，十分感谢！\n\n郑重申明：8518超额宝不是P2P类产品，因托管账户的支付通道用的是汇付的P2P类的支付通道，故申请表中含有所属P2P平台。</item>
+    </string-array>
+
+    <string-array name="xiangguanyouhui">
+        <item>如何获得体验金券？</item>
+        <item>如何领取手续费券？</item>
+        <item>如何获得投标奖励资格？</item>
+        <item>如何获取抢购码？</item>
+    </string-array>
+    
+    <string-array name="xiangguanyouhui_detail">
+        <item>领取条件：新用户注册即送。\n使用方式：体验金仅供使用体验流程，投体验标。\n时间限制：与用户首次进入个人中心时间关联，体验金可能不一样。\n其他限制：到期本金收回，收益可提现。</item>
+        <item>领取条件：投资一笔真实交易（同一个标的只发放一次）；\n使用方式：在个人中心“我的奖励”一栏目下点击“立即领取”，则对应的金额发放到您对应的汇付账户下，可任意使用和提现，目的奖励您提现费用。\n时间限制：无有效期。\n其他限制：体验标，新手标，不送手续费。</item>
+        <item>领取条件：1）历史发展过N个会员；2）累计投标超过M元；3）本次投标超过Y元（N，M，Y为变量）。\n使用方式：针对某次活动而设定的标的。\n时间限制：无有效期。\n其他限制：无。</item>
+        <item>领取条件：根据8518不定期发布的活动领取。\n使用方式：用于特殊标的投资的权限输入。\n时间限制：无有效期。\n其他限制：无。</item>
+    </string-array>
+    
+     <string-array name="anquanbaozhang">
+        <item>第三方账户托管</item>
+        <item>信息安全</item>
+        <item>合规保障</item>
+        <item>金融资产</item>
+        <item>平台操作过程透明化</item>
+    </string-array>
+    
+    <string-array name="anquanbaozhang_detail">
+        <item>
+资金账户开设在第三方资金托管平台汇付天下，每个注册用户都有自己对应的独立资金托管账户。实现平台和帐户资金真正实现物理隔离，最大限度
+保障用户的资金安全。同时拥有三重密码保护体系，平台账户密码、托管账户密码和交易密码，只有三个密码同时校验正确才能完成资金流转。</item>
+        <item>自主技术团队倾力打造，分布式架构。实名认证、帐号绑定等多重安全认证，任何提现操作，只能转出到本人实名绑定的银行账户，完全保障用户
+的资金转出安全。同时独立的，分级的帐户管理权限严格防范客户信息泄露。</item>
+        <item>严格按金融行业监管要求，不做资金池，不做超募或直接融资，完成遵循“透明、安全”的原则，是便捷理财，超额理财的新手段。</item>
+        <item>超额宝选择的均为优质的金融资产，合作金融机构选择入围条件：\n\n
+1.     对应金融机构保持零违约记录。\n\n
+2.     对应资产的融资主体保持零违约记录。\n\n
+3.     对应金融机构承诺或给出对应违约保证。</item>
+<item>1、融资方信息公开透明\n\n8518尽职调查融资方信息都会被公开，确保投资人在投资前就能对项目有100%的了解。\n\n2、不经手投资人资金\n\n平台不设资金池，资金的流转不经过平台，平台没有任何权限去支配资金。资金的每一次流动都被投资人清晰的监控。8518超额宝与国内知名第三方支付公司汇付天下合作 ，保证您在资金运作时的交易安全和信息安全。\n\n3、资金流转信息透明\n\n投资后，资金的所有流转使用信息都能可查，项目拥有上市公司般的信息透明度，投资人也拥有最完整的知情权。\n\n4、平台透明\n\n以个人提供综合性的金融服务为核心业务。以最真实可靠的数据信息为互联网平台的基本信誉。</item>
+    </string-array>
+     <string name="pull_to_refresh_pull_label">下拉刷新</string>
+  <string name="pull_to_refresh_release_label">松开刷新数据</string>
+  <string name="pull_to_refresh_refreshing_label">正在加载…</string>
+
+    <!-- Just use standard Pull Down String when pulling up. These can be set for languages which require it -->
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+    
+    <!-- End -->
+
+</resources>

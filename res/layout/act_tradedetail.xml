@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="55.0dip"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:onClick="onback"
+             android:background="@drawable/btn_bg_style"
+            android:src="@drawable/back_92xx"/>
+        
+
+       <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="交易明细"         
+            android:textColor="#444"
+            android:textSize="17sp" />
+     
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll1" 
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        android:background="#999"></LinearLayout>
+    
+    
+            <com.xlistview.XListView
+                android:id="@+id/listView_trade"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:scrollbars="none" >
+                </com.xlistview.XListView>
+        <LinearLayout
+        android:id="@+id/empty_trade"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" 
+        >
+              
+            <include 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/empty_view"/>
+             <TextView
+                 android:id="@+id/tv_emp_trade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="15dip"
+            android:text="点击重新加载"
+            android:textColor="#bbb"
+            android:textSize="14sp" /> 
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/netless_trade"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" 
+        >
+              
+            <include 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/netless_view"/>
+              <TextView
+            android:id="@+id/tv_net_trade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="15dip"
+            android:layout_marginTop="2dp"
+            android:text="点击重新加载"
+            android:textColor="#bbb"
+            android:textSize="14sp" />  
+
+    </LinearLayout>
+
+   <LinearLayout
+        android:id="@+id/loading_trade"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" 
+        >
+            <include 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/loding_dialog_layout"/>
+    </LinearLayout>
+    
+</LinearLayout>

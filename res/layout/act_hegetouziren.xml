@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#eee" >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="55.0dip"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:onClick="onback"
+             android:background="@drawable/btn_bg_style"
+            android:src="@drawable/back_92xx"/>
+        
+        <TextView
+            android:layout_toRightOf="@id/btn_back" 
+            android:layout_width="0.3dp"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="3dp"
+            android:visibility="gone"
+            android:layout_marginBottom="3dp"
+            android:background="#cc0000"/>
+
+       <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="合格投资人协议"         
+            android:textColor="#444"
+            android:textSize="17sp" />
+     
+    </RelativeLayout>
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:scrollbars="none">
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="本人自愿申报成为合格投资人，并申明如下：\n\n本人申明在投资8518理财网发布的理财产品之前，本人符合下列任意条件之一，且能够识别、判断和承担理财产品的投资风险：\n\n
+
+一、具有至少10万元可用于投资的个人资产（必要时需提供财产证明：包括但不仅限于提供银行开具的存款证明；提供近一个月内存折或存单复印件，需银行盖章；提供有价理财证明，一年内的有价理财资产证明，需理财公司盖章）。\n\n
+
+二、个人收入在最近3年内每年收入超过20万元人民币；夫妻双方合计收入在最近3年内每年收入超过30万元人民币；在认购信托（资管）计划时，个人或家庭金融资产总计超过100万元。根据相关规定，本人愿意提供所需的合格投资人收入证明。\n\n
+
+本人申明在进行投资行为前，认真阅读并理解所有产品文件，并愿意依法承担相应的投资风险。\n\n
+
+本人申明成为合格投资人后，对交易涉及的事项保密，并依法缴纳投资活动所产生的各项税费。"/>
+    </ScrollView>
+
+</LinearLayout>

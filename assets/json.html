@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <script>
+        var u = navigator.userAgent, app = navigator.appVersion;
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //android终端或者uc浏览器
+        var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+
+var result='\{"title":"8518\u8d85\u989d\u5b9d","content":"金融机构信用背书，机构零违约率；账户托管无资金池","imgurl":"http://himg.bdimg.com/sys/portrait/item/515f313233343541b0efd6faf303.jpg","htmlurl":"http://bao.8518.com/Chaoebao-Index-festival1.html"}';
+
+
+        function jumpshare(func, param) {
+            if (isAndroid)
+              window.android.share(result);
+            else if (isIOS)
+              window.location.href=func+':'+result;
+            return "";
+        }
+
+
+
+
+       
+    </script>
+    <style type="text/css">
+    	.block{
+    		display: block;
+    		margin-left: auto;
+    		margin-right: auto;
+    	}
+    	.btn{
+    		margin-left: 20px;
+    		margin-right: 20px;
+			padding: 10px 25px 10px 25px;
+			background: #3485da;
+			color: white;
+			font-family: Microsoft YaHei,Arial,Verdana,sans-serif;
+			font-size: 1.0em;
+			border: none;
+			border-radius: 2px;
+			outline: none;
+    	}
+    </style>
+</head>
+<body>
+	<div class="block">
+		<button id="jumpshare" class="btn" onclick="jumpshare('share', '');">jumpshare</button>
+		<!--<button id="jumpclose" class="btn" onclick="jumpclose('close', '');">jumpclose</button>-->
+	</div>
+</body>
+</html>

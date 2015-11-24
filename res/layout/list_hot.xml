@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <!--
+         <FrameLayout
+        android:id="@+id/parent_"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    -->
+
+    <com.xlistview.XListView
+        android:id="@+id/listView_hot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:scrollbars="none"
+        
+         >
+    </com.xlistview.XListView>
+
+    <LinearLayout
+        android:id="@+id/empty_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/empty_view" />
+
+        <TextView
+            android:id="@+id/tv_reload_hot1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"
+            android:paddingBottom="15dip"
+            android:clickable="true"
+            android:text="点击重新加载"
+            android:textColor="#bbb"
+            android:textSize="14sp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/netless_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/netless_view" />
+
+        <TextView
+            android:id="@+id/tv_reload_hot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:clickable="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"
+            android:paddingBottom="15dip"
+            android:text="点击重新加载"
+            android:textColor="#bbb"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <!-- </FrameLayout> -->
+
+</LinearLayout>

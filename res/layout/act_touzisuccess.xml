@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+   <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#eee" >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="55.0dip"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_bg_style"
+            android:onClick="onback"
+            android:src="@drawable/back_92xx" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="投标成功"
+            android:textColor="#444"
+            android:textSize="17sp" />
+    </RelativeLayout>
+	<ImageView
+	    android:id="@+id/iv1"
+	    android:layout_above="@+id/ll1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginBottom="10dp"
+	    android:src="@drawable/qiandai"/>
+	 
+	<LinearLayout
+	    android:id="@+id/ll1" 
+	    android:layout_marginTop="5dp"
+	    android:layout_width="fill_parent"
+	    android:layout_centerInParent="true"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">
+	    <TextView
+        android:id="@+id/tv1" 
+        android:layout_below="@id/iv1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="恭喜您，投标成功！"
+        android:textColor="#f00"
+        android:textSize="23sp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+	    <TextView 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:layout_marginTop="30dp"
+	        android:text="超额宝CEB-0005期"/>
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:layout_marginTop="10dp"
+	        android:orientation="horizontal">
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	             android:textSize="18sp"
+	            android:text="开始计算收益："/>
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="18sp"
+	            android:text="放款次日"/>
+	    </LinearLayout>
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:layout_marginTop="10dp"
+	        android:orientation="horizontal">
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	             android:textSize="18sp"
+	            android:text="查看回款计划："/>
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	             android:textSize="18sp"
+	            android:text="放款当天"/>
+	    </LinearLayout>
+	    
+	     
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_below="@id/ll1"
+	    android:layout_marginTop="35dp"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:gravity="center">
+	<Button
+	         android:id="@+id/btn_touzijilu" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/main_btn_style"
+                android:textColor="@drawable/pinglun_text"
+                android:text="查看投资记录"/>
+	</LinearLayout>
+</RelativeLayout>

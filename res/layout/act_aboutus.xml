@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#eee" >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="55.0dip"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:onClick="onback"
+             android:background="@drawable/btn_bg_style"
+            android:src="@drawable/back_92xx"/>
+        
+        <TextView
+            android:layout_toRightOf="@id/btn_back" 
+            android:layout_width="0.3dp"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="3dp"
+            android:visibility="gone"
+            android:layout_marginBottom="3dp"
+            android:background="#cc0000"/>
+
+       <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="关于我们"         
+            android:textColor="#444"
+            android:textSize="17sp" />
+     
+    </RelativeLayout>
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none">
+       <LinearLayout 
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:orientation="vertical">
+  <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:layout_marginBottom="20dp"
+      android:orientation="horizontal">
+      <ImageView 
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:src="@drawable/ceb_icon"/>
+  </LinearLayout>
+   <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:orientation="horizontal">
+      <TextView 
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:textColor="#666"
+          android:text="\t\t\t\t8518超额宝为上海厚行金融信息服务公司运营，厚行金融是总部位于上海陆家嘴金融中心的专业金融服务企业，注册资金2000万元。厚行金融为金融服务品牌企业，也是中国证券协会成员，成立至今已经完过超过千亿元的投融资服务，而且保持零违约记录。厚行金融立足于传统金融企业的服务创新和产品创新，以“More People, More Benefit!”为理念，让更多投资人获得更高的安全收益。"/>
+  </LinearLayout>
+  <RelativeLayout
+                android:id="@+id/rl_contactus"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/list_bg_style"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+ <ImageView
+        		    android:id="@+id/iv2"
+                    android:layout_width="28dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/lianxiwomen" />
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    android:layout_toRightOf="@id/iv2"
+                    android:text="客服电话"
+                    android:textColor="#444"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/mm_submenu4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="14dp"
+                    android:scaleType="matrix"
+                    android:src="@drawable/jiantou1b" />
+
+                <TextView
+                    android:id="@+id/tv_yuchanqi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/mm_submenu4"
+                    android:text="400-860-8518"
+                    android:textColor="#808080"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="#ccc" >
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/rl_mail"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/list_bg_style"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+ <ImageView
+        		    android:id="@+id/iv2"
+                    android:layout_width="28dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/youxiang" />
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    android:layout_toRightOf="@id/iv2"
+                    android:text="客服邮箱"
+                    android:textColor="#444"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/mm_submenu4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="14dp"
+                    android:scaleType="matrix"
+                    android:src="@drawable/jiantou1b" />
+
+                <TextView
+                    android:id="@+id/tv_yuchanqi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/mm_submenu4"
+                    android:text="bao@8518.com"
+                    android:textColor="#808080"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="#ccc" >
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/rl_weixin"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/list_bg_style"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+ <ImageView
+        		    android:id="@+id/iv2"
+                    android:layout_width="28dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/weixin" />
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    android:layout_toRightOf="@id/iv2"
+                    android:text="微信公众号"
+                    android:textColor="#444"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/mm_submenu4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="14dp"
+                    android:scaleType="matrix"
+                    android:src="@drawable/jiantou1b" />
+
+                <TextView
+                    android:id="@+id/tv_yuchanqi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/mm_submenu4"
+                    android:text="8518理财网"
+                    android:textColor="#808080"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="#ccc" >
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/rl_guanwang"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/list_bg_style"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+ <ImageView
+        		    android:id="@+id/iv2"
+                    android:layout_width="28dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/guangwangdizhi" />
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    android:layout_toRightOf="@id/iv2"
+                    android:text="官网地址"
+                    android:textColor="#444"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/mm_submenu4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="14dp"
+                    android:scaleType="matrix"
+                    android:src="@drawable/jiantou1b" />
+
+                <TextView
+                    android:id="@+id/tv_yuchanqi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/mm_submenu4"
+                    android:text="bao.8518.com"
+                    android:textColor="#808080"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="#ccc" >
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/rl_shangwu"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/list_bg_style"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+ <ImageView
+        		    android:id="@+id/iv2"
+                    android:layout_width="28dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/shangwuhezuo" />
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    android:layout_toRightOf="@id/iv2"
+                    android:text="商务合作"
+                    android:textColor="#444"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/mm_submenu4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="14dp"
+                    android:scaleType="matrix"
+                    android:src="@drawable/jiantou1b" />
+
+                <TextView
+                    android:id="@+id/tv_yuchanqi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/mm_submenu4"
+                    android:text="BD@8518.com"
+                    android:textColor="#808080"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="#ccc" >
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="4dp"
+                android:orientation="vertical">
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:textColor="#666"
+                    android:gravity="center"
+                    android:text="版权所有：上海厚行金融信息服务有限公司"/>
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:layout_marginTop="2dp"
+                    android:textColor="#666"
+                    android:gravity="center"
+                    android:text="地址：上海市浦东新区浦东大道720号国际航运大厦7L座"/>
+            </LinearLayout>
+  </LinearLayout>
+</ScrollView>
+</LinearLayout>

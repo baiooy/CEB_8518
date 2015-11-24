@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/add_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#eee" >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="55.0dip"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+             android:background="@drawable/btn_bg_style"
+             android:onClick="onback"
+            android:src="@drawable/back_92xx"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="系统公告"
+            android:textColor="#444"
+            android:textSize="17sp" />
+    </RelativeLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="#999"></LinearLayout>
+
+
+            <com.xlistview.XListView
+                android:id="@+id/listView_smessage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:scrollbars="none" >
+            </com.xlistview.XListView>
+             <LinearLayout
+        android:id="@+id/empty_smsg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" 
+        >
+              
+            <include 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/empty_view"/>
+             <TextView
+                 android:id="@+id/tv_emp_smsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="15dip"
+            android:text="点击重新加载"
+            android:textColor="#bbb"
+            android:textSize="14sp" /> 
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/netless_smsg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" 
+        >
+              
+            <include 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/netless_view"/>
+              <TextView
+            android:id="@+id/tv_net_smsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="15dip"
+            android:layout_marginTop="2dp"
+            android:text="点击重新加载"
+            android:textColor="#bbb"
+            android:textSize="14sp" />  
+
+    </LinearLayout>
+            
+            
+            
+</LinearLayout>

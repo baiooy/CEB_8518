@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.caifuline"
+    android:versionCode="3"
+    android:versionName="1.1.2" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+<uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 显示顶层浮窗 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" /> <!-- 拨打电话 -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" /> <!-- 访问GMail账户列表 -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" /> <!-- 允许程序请求验证从AccountManager -->
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" /> <!-- 允许程序管理AccountManager中的账户列表 -->
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" /> <!-- 允许一个程序通过账户验证方式访问账户管理ACCOUNT_MANAGER相关信息 -->
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 手机震动 -->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" /> <!-- 允许程序禁用键盘锁 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 获取网络信息状态，如当前的网络连接是否有效 -->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" /> <!-- 拨打电话 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 允许程序改变Wi-Fi连接状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 允许程序访问Wi-Fi网络状态信息 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 允许程序写入外部存储，如SD卡上写文件 -->
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" /> <!-- 允许一个程序广播常用intents -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" /> <!-- 允许读写系统设置项 -->
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission> <!-- 访问网络 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission> <!-- 访问电话状态 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- 允许程序开机自动运行 -->
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" /> <!-- 下载  友盟自动更新 -->
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" /> <!-- 下载  友盟自动更新 -->
+
+    <application
+        android:name="com.ceb.base.DemoApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ceb_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="54eee2ccfd98c526fc000793" >
+        </meta-data>
+        <!--
+             android：name对应渠道包统计位置，
+        	 android：value对应各渠道值
+        -->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="8518ceb" />
+        <!-- ###################Umeng自动更新用到的service################### -->
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.ceb.activity.ActAppStart"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ceb.activity.MainActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity android:name="com.ceb.activity.ActStartup" >
+        </activity>
+        <activity android:name="com.ceb.activity.ActRegister" >
+        </activity>
+        <activity android:name="com.ceb.activity.ActLogin" >
+        </activity>
+        <activity android:name="com.ceb.activity.ActAccountBalance" >
+        </activity>
+        <activity android:name="com.ceb.activity.ActRecharge" >
+        </activity>
+        <activity android:name="com.ceb.activity.ActTixian" >
+        </activity>
+        <activity android:name="com.ceb.activity.ActInvestHistory" >
+        </activity>
+        <activity android:name="com.ceb.activity.ActTradeDetail" >
+        </activity>
+        <activity android:name="com.ceb.activity.ActTransferProduct" >
+        </activity>
+        <activity android:name="com.ceb.activity.ActSetting" >
+        </activity>
+        <activity android:name="com.ceb.activity.ActFeedBack" >
+        </activity>
+        <activity android:name="com.ceb.activity.ActAboutUs" >
+        </activity>
+        <activity android:name="com.ceb.activity.ActMyMessage" >
+        </activity>
+        <activity android:name="com.ceb.activity.ActHotActivity" >
+        </activity>
+        <activity android:name="com.ceb.activity.ActRepaymentSchedule" >
+        </activity>
+        <activity android:name="com.ceb.activity.ActContract" >
+        </activity>
+        <activity android:name="com.ceb.activity.ActCebDetail" >
+        </activity>
+         <activity android:name="com.ceb.activity.MainnActivity" >
+        </activity>
+         <activity android:name="com.ceb.activity.ActTouBiaoResult" >
+        </activity>
+        <activity
+            android:name="com.ceb.activity.ActTouzi"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.ceb.activity.ActTouziSucceed"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.ceb.activity.ActFindBackPasswd"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.ceb.activity.ActResetPasswd"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.ceb.activity.ActRegisterSucceed"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.ceb.activity.ActAlterPasswd"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.ceb.activity.ActHuifu"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.ceb.activity.ActUserYanzheng"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.ceb.activity.ActBannerDetail"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.ceb.activity.ActChongzhiHuifu"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.ceb.activity.ActTixianRule"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.ceb.activity.ActBankCardManage"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.ceb.activity.ActAddBankCard"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.ceb.activity.ActTixianHuifu"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.ceb.activity.ActTouziHuifu"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.ceb.activity.ActAgreement"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.ceb.activity.ActHuiFuSucceed"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.ceb.activity.GestureEditActivity"
+            android:launchMode="standard" >
+        </activity>
+        <activity
+            android:name="com.ceb.activity.GestureVerifyActivity"
+            android:launchMode="standard" >
+        </activity>
+        <activity
+            android:name="com.ceb.activity.ActHotDetail"
+            android:launchMode="standard" >
+        </activity>
+        <activity
+            android:name="com.ceb.activity.ActSyatemMsg"
+            android:launchMode="standard" >
+        </activity>
+        <activity
+            android:name="com.ceb.activity.ActNoticeDetail"
+            android:launchMode="standard" >
+        </activity>
+        <activity
+            android:name="com.ceb.activity.ActChongzhiRule"
+            android:launchMode="standard" >
+        </activity>
+       
+        <activity
+            android:name="com.ceb.activity.ActFengxiantishi"
+            android:launchMode="standard" >
+        </activity>
+        <activity
+            android:name="com.ceb.activity.ActYonghuxieyi"
+            android:launchMode="standard" >
+        </activity>
+        <activity
+            android:name="com.ceb.activity.ActHegeTouziren"
+            android:launchMode="standard" >
+        </activity>
+        <activity
+            android:name="com.ceb.activity.ActMyReward"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.ceb.activity.ActAccountCenter"
+            android:launchMode="standard" >
+        </activity>
+         <activity
+            android:name="com.ceb.activity.ActYaoqing"
+            android:launchMode="singleTask" >
+        </activity>
+         <activity
+            android:name="com.ceb.activity.ActInviteList"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.ceb.activity.ActShareToFriends"
+            android:launchMode="singleTask" >
+        </activity>
+         <activity
+            android:name="com.ceb.activity.ActAwardCondition"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.ceb.activity.ActCommonProblem"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.ceb.activity.ActInviteListNoPartner"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.ceb.activity.ActInviteRule"
+            android:launchMode="singleTask" >
+        </activity>
+        
+        
+        
+        
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <!-- 
+            	Adapter表示一个继承自cn.sharesdk.framework.authorize.AuthorizeAdapter的类，
+            	这个类可以监听到页面的生命周期，也可以获取授权页面的各种UI控件。 
+            	开发者可以通过继承AuthorizeAdapter，重写其方法，并获取各种UI来自定义这个页面的行为。
+            <meta-data android:name="Adapter" android:value="cn.sharesdk.demo.MyAdapter" />            
+            -->
+            
+            <!--
+            	Dropbox的SSO功能需要在此处添加一个对ACTION_VIEW事件的过滤器，其中的scheme是
+            	“db-”前缀再开发者应用的加上appKey。如果此过滤器不设置，则不能完成SSO功能授权
+            -->
+            <intent-filter>
+                <data android:scheme="db-7janx53ilz11gbs" />
+        		<action android:name="android.intent.action.VIEW" />
+        		<category android:name="android.intent.category.BROWSABLE"/>
+        		<category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+			<!--
+            	如果集成QQ分享，或者使用QQ客户端来进行QQ空间的分享，须要在此处添加一个对ACTION_VIEW
+            	事件的过滤器，其中的scheme是“tencent”前缀再开发者应用的加上appId。如果此过滤器不设置，
+            	则分享结束以后不能得到正确的回调
+            -->
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 微信分享回调 -->
+        <activity
+            android:name="com.caifuline.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- ################### 百度云推送模块  ###################### -->
+        <!-- push应用定义消息receiver声明 -->
+        <receiver
+            android:name="com.baidu.push.example.MyPushMessageReceiver"
+            android:exported="false" >
+            <intent-filter>
+
+                <!-- 接收push消息 -->
+                <action android:name="com.baidu.android.pushservice.action.MESSAGE" />
+                <!-- 接收bind,unbind,fetch,delete等反馈消息 -->
+                <action android:name="com.baidu.android.pushservice.action.RECEIVE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.CLICK" />
+            </intent-filter>
+        </receiver>
+
+        <!-- push必须的receviver和service声明 -->
+        <receiver
+            android:name="com.baidu.android.pushservice.PushServiceReceiver"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
+                <action android:name="com.baidu.android.pushservice.action.media.CLICK" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.baidu.android.pushservice.RegistrationReceiver"
+            android:exported="false"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.METHOD" />
+                <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.baidu.android.pushservice.PushService"
+            android:exported="false"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE" />
+            </intent-filter>
+        </service>
+        <!-- 4.4版本新增的CommandService声明，提升小米和魅族手机上的实际推送到达率 -->
+        <service
+            android:name="com.baidu.android.pushservice.CommandService"
+            android:exported="true" />
+        <!-- push结束 -->
+
+
+        <!-- 在百度开发者中心查询应用的API Key -->
+        <meta-data
+            android:name="api_key"
+            android:value="1S9zHtVaYdG59ohpcca7lGXK" />
+    </application>
+
+</manifest>

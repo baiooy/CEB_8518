@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="@color/zhusediao"
+        android:orientation="vertical">
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:background="@color/zhusediao">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您已成功邀请："
+            android:textColor="#fff"/>
+        <TextView
+            android:id="@+id/tv_invitenum2" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"/>
+         <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:text="，获得积分奖励："
+            android:textColor="#fff"/>
+          <TextView
+              android:id="@+id/tv_number2" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"/>
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/zhusediao"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="积分可以在8518.com，电脑端登录兑换丰富礼品。"/>
+    </LinearLayout>
+    </LinearLayout>
+   <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:text="邀请朋友"/>
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+             android:textSize="12sp"
+            android:gravity="center"
+            android:text="注册"/>
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+             android:textSize="12sp"
+            android:gravity="center"
+            android:text="开通托管账户"/>
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+             android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:text="已投资"/>
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+             android:textSize="12sp"
+            android:gravity="center"
+            android:text="积分奖励"/>
+    </LinearLayout>
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:orientation="horizontal"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:background="@drawable/line"></LinearLayout>
+    <com.xlistview.XListView
+        android:id="@+id/listView_jifen"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:divider="@null"
+        android:scrollbars="none" >
+    </com.xlistview.XListView>
+
+    <LinearLayout
+        android:id="@+id/empty_jifen"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/empty_view" />
+
+        <TextView
+            android:id="@+id/tv_emp_jifen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="15dip"
+            android:text="点击重新加载"
+            android:textColor="#bbb"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/netless_jifen"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/netless_view" />
+
+        <TextView
+            android:id="@+id/tv_net_jifen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"
+            android:paddingBottom="15dip"
+            android:text="点击重新加载"
+            android:textColor="#bbb"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loading_jifen"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/loding_dialog_layout" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#eee" >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="55.0dip"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_bg_style"
+            android:onClick="onback"
+            android:src="@drawable/back_92xx" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="投资"
+            android:textColor="#444"
+            android:textSize="17sp" />
+
+        <Button 
+            android:id="@+id/btn_agreement"
+            android:layout_width="55dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_bg_style"
+            android:text="协议"
+            android:textColor="#666"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:background="@color/zhusediao"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="年化收益率："
+                android:textColor="#fff"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_annualIncome"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:textColor="#fff"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="投资期限："
+                android:textColor="#fff"
+                android:textSize="13sp" />
+
+            <TextView
+                 android:id="@+id/tv_period"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:textColor="#fff"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout 
+            android:id="@+id/ll_totalMoney"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="可投金额："
+                android:textColor="#fff"
+                android:textSize="13sp" />
+
+            <TextView
+                 android:id="@+id/tv_totalMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:textColor="#fff"
+                android:textSize="13sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_maxInvestment"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="投标总额上限："
+                android:textColor="#fff"
+                android:textSize="13sp" />
+
+            <TextView
+                 android:id="@+id/tv_maxInvestment"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:textColor="#fff"
+                android:textSize="13sp" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="该标已投资金额："
+                android:textColor="#fff"
+                android:textSize="13sp" />
+
+            <TextView
+                 android:id="@+id/tv_alreadyInvest"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:textColor="#fff"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:layout_below="@id/ll1"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textSize="14sp" 
+            android:text="账户余额：" />
+
+        <TextView
+            android:id="@+id/tv_accountBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/tv1"
+            android:gravity="center"
+             android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_chongzhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:text="充值"
+            android:textColor="#00cccc"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rl1"
+        android:background="@drawable/kuang"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_subtract"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:background="@drawable/jian"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+             <TextView
+            android:id="@+id/tv_touzie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:background="@null"
+            android:textColor="@color/black" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:text="元"
+            android:background="@null"
+            android:textSize="18sp"
+            android:textColor="@color/black" />
+        </LinearLayout>
+
+       
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/black"
+            android:background="@drawable/jia"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:layout_below="@id/ll2"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textSize="14sp" 
+            android:text="预计收益：" />
+
+        <TextView
+             android:id="@+id/tv_shouyi"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/tv4"
+            android:gravity="center"
+            android:textSize="14sp" 
+            android:textColor="#f00" />
+
+        <Button
+            android:id="@+id/btn_quantou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:text="全投"
+            android:textColor="#000"
+            android:textSize="14sp" />
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_touzi"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/rl2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_touzi"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="同意协议并投资"
+            android:textColor="#fff"
+            android:clickable="true"
+            android:background="@drawable/inputdata"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</RelativeLayout>

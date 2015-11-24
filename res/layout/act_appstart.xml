@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:id="@+id/rl_rl"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+	<!--
+	xmlns:tools="http://schemas.android.com/tools"
+	tools:context=".CalendarActivity"
+	 <FrameLayout
+      android:id="@+id/fl_off"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         >
+     黑色背景的view
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/black" />
+    白色的向下的view
+    <ImageView
+          android:id="@+id/iv_off"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+         android:visibility="gone"/>
+</FrameLayout> -->
+<include layout="@layout/tv_off"/>
+	<LinearLayout 
+	    android:id="@+id/num"
+        android:layout_marginBottom="10sp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal">
+	<ImageView android:id="@+id/walker1"
+	    	android:layout_marginLeft="5sp"
+	    	android:layout_marginRight="5sp"
+	    	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:contentDescription="@string/hello_world"
+			android:src="@drawable/wb_walker1_bottom_notloggedin"/>
+	<ImageView android:layout_width="wrap_content"
+	    	android:layout_marginLeft="5sp"
+	    	android:layout_marginRight="5sp"
+	    	android:id="@+id/walker2"
+	        android:layout_height="wrap_content"
+	        android:contentDescription="@string/hello_world"
+			android:src="@drawable/wb_walker_bottom_notloggedin"/>
+	<ImageView android:layout_width="wrap_content"
+	    	android:layout_marginLeft="5sp"
+	    	android:layout_marginRight="5sp"
+	    	android:id="@+id/walker3"
+	        android:layout_height="wrap_content"
+	        android:contentDescription="@string/hello_world"
+			android:src="@drawable/wb_walker_bottom_notloggedin"/>
+ 	<!-- <ImageView android:layout_width="wrap_content"
+	    	android:id="@+id/walker4"
+	    	android:layout_marginLeft="5sp"
+	    	android:layout_marginRight="5sp"
+	        android:layout_height="wrap_content"
+	        android:contentDescription="@string/hello_world"
+			android:src="@drawable/wb_walker_bottom_notloggedin"/> -->
+	 </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view"
+        android:background="#fff"
+        android:layout_above="@id/num"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+    
+    <ImageView android:id="@+id/splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/action_settings"
+        android:background="@drawable/splash"/>
+	
+</RelativeLayout>

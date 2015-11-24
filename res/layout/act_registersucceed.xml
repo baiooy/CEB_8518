@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+     <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff" >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="55.0dip"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:onClick="onback"
+             android:background="@drawable/btn_bg_style"
+            android:src="@drawable/back_92xx"/>
+      
+
+       <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="注册成功"         
+            android:textColor="#444"
+            android:textSize="17sp" />
+        <ImageButton 
+           android:id="@+id/btn_shareregis" 
+           android:layout_width="55dp"
+           android:layout_height="fill_parent"
+           android:layout_centerVertical="true"
+           android:src="@drawable/fenxiang1"
+           android:background="@null"
+           android:textColor="#666"
+           android:textSize="16sp"
+           android:layout_alignParentRight="true"/>
+     
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@id/top"
+        android:background="#ccc"></LinearLayout>
+       <ImageView
+	    android:id="@+id/iv1"
+	    android:layout_above="@+id/ll1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="80dp"
+	    android:layout_marginBottom="10dp"
+	    android:src="@drawable/qiandai"/>
+	 
+	<LinearLayout
+	    android:id="@+id/ll1" 
+	    android:layout_marginTop="5dp"
+	    android:layout_width="fill_parent"
+	    android:layout_centerInParent="true"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">
+	    <TextView
+        android:id="@+id/tv1" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="恭喜您，注册成功！"
+        android:textColor="#f00"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+	  
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:background="@drawable/background"
+	        android:layout_marginTop="10dp"
+	        android:padding="20dp"
+	        android:orientation="vertical">
+	         <TextView
+	          android:id="@+id/tv_str"   
+	          android:layout_width="fill_parent"
+	          android:layout_height="wrap_content"
+	          android:textSize="11sp"
+	          android:drawableLeft="@drawable/page"
+	          android:drawablePadding="10dp"
+	          android:text="系统自动送您一笔8000元体验金券，有效期为3天。"/>
+	      <TextView
+	          android:layout_width="fill_parent"
+	          android:layout_height="wrap_content"
+	          android:textSize="11sp"
+	          android:drawableLeft="@drawable/page"
+	          android:layout_marginTop="5dp"
+	          android:drawablePadding="10dp"
+	          android:text="现在只需开通资金托管安全账户（汇付天下），就可以不出本金，白拿收益了。"/>
+	       <TextView
+	          android:layout_width="fill_parent"
+	          android:layout_height="wrap_content"
+	          android:textSize="11sp"
+	          android:drawableLeft="@drawable/page"
+	          android:layout_marginTop="5dp"
+	          android:drawablePadding="10dp"
+	          android:text="三层密码保护+实名认证，保障您的投资安全"/>
+	    </LinearLayout>
+	   
+	    
+	     
+	</LinearLayout>
+   
+   
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll1"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <Button
+         android:id="@+id/btn_huifutianxia" 
+         android:layout_width="fill_parent"
+         android:layout_height="36dp"
+         android:text="马上开通托管账户"
+         android:textSize="14sp"
+         android:background="@drawable/inputdata"
+         android:textColor="#fff"/>
+    </LinearLayout>
+</RelativeLayout>
